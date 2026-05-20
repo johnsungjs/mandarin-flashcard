@@ -2,70 +2,126 @@
 
 import { useMemo, useState } from "react";
 
-import { Check, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  RotateCcw,
+  Shuffle,
+  Undo,
+} from "lucide-react";
 
 import ExerciseCard from "@/components/flashcard/ExerciseCard";
 import Link from "next/link";
+import { hsk1Data } from "@/data/vocabData";
 
 const levels = ["HSK 1", "HSK 2", "HSK 3"];
 
-const cards = [
-  {
-    hanzi: "你好",
-    pinyin: "nǐ hǎo",
-    meaning: "hello",
-  },
-  {
-    hanzi: "谢谢",
-    pinyin: "xiè xie",
-    meaning: "thank you",
-  },
-  {
-    hanzi: "学习",
-    pinyin: "xué xí",
-    meaning: "study / learn",
-  },
-  {
-    hanzi: "中国",
-    pinyin: "zhōng guó",
-    meaning: "china",
-  },
-  {
-    hanzi: "再见",
-    pinyin: "zài jiàn",
-    meaning: "goodbye",
-  },
-];
+const initialCards = hsk1Data;
 
 export default function ExercisePage() {
-  const [selectedLevel, setSelectedLevel] = useState("HSK 1");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
+  const [cards, setCards] = useState(initialCards);
+  const [completed, setCompleted] = useState(false);
+  // const [masteredIds, setMasteredIds] = useState<string[]>([]);
 
-  const currentCard = cards[currentIndex];
+  const [masteredIds, setMasteredIds] = useState<string[]>(() => {
+    if (typeof window === "undefined") return [];
+
+    try {
+      const saved = localStorage.getItem("mandarin-mastered");
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  const activeCards = cards.filter((card) => !masteredIds.includes(card.id));
+
+  const saveMastered = (ids: string[]) => {
+    setMasteredIds(ids);
+
+    localStorage.setItem("mandarin-mastered", JSON.stringify(ids));
+  };
+
+  const resetMastered = () => {
+    localStorage.removeItem("mandarin-mastered");
+
+    setMasteredIds([]);
+    setCompleted(false);
+    setCurrentIndex(0);
+    setCards(initialCards)
+  };
+
+  const currentCard = activeCards[currentIndex];
 
   const progress = useMemo(() => {
-    return ((currentIndex + 1) / cards.length) * 100;
-  }, [currentIndex]);
+    return ((currentIndex + 1) / activeCards.length) * 100;
+  }, [currentIndex, activeCards]);
+
+  const restartSession = () => {
+    setCompleted(false);
+    setCurrentIndex(0);
+    setRevealed(false);
+  };
 
   const nextCard = () => {
     // setRevealed(true);
 
-    setCurrentIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
+    if (currentIndex === activeCards.length - 1) {
+      setCompleted(true);
+      return;
+    }
+
+    setCurrentIndex((prev) => prev + 1);
   };
 
   const previousCard = () => {
     // setRevealed(true);
 
-    setCurrentIndex((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
+    setCurrentIndex((prev) => (prev === 0 ? activeCards.length - 1 : prev - 1));
   };
 
   const shuffleCards = () => {
-    console.log("shuffle");
+    const shuffled = [...activeCards].sort(() => Math.random() - 0.5);
+
+    setCards(shuffled);
+    setCurrentIndex(0);
+    setRevealed(false);
   };
 
   const markMastered = () => {
-    console.log("mastered");
+    const updated = [...masteredIds, currentCard.id];
+
+    saveMastered(updated);
+
+    if (currentIndex >= activeCards.length - 1) {
+      setCompleted(true);
+      return;
+    }
+
+    setCurrentIndex((prev) => prev + 1);
+  };
+
+  const getStoredMastered = (): string[] => {
+    const saved = localStorage.getItem("mandarin-mastered");
+
+    return saved ? JSON.parse(saved) : [];
+  };
+
+  const undoLastMastered = () => {
+    const stored = getStoredMastered();
+
+    if (stored.length === 0) {
+      return;
+    }
+
+    const updated = stored.slice(0, -1);
+
+    saveMastered(updated);
+
+    setCompleted(false);
   };
 
   return (
@@ -80,7 +136,9 @@ export default function ExercisePage() {
           <p className="text-lg text-slate-400">
             Tap a card to reveal pinyin and meaning.
           </p>
-          <Link href={"/list"} className="text-md text-indigo-400">See Vocabulary List.</Link>
+          <Link href={"/list"} className="text-md text-indigo-400">
+            See Vocabulary List.
+          </Link>
         </div>
 
         <div className="mt-10 flex items-center gap-4 border-b border-white/10 pb-5">
@@ -98,19 +156,10 @@ export default function ExercisePage() {
           ))}
         </div>
         <div>
-          {/* <div className="mb-6 flex items-center justify-between">
-            <button
-              onClick={shuffleCards}
-              className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] text-slate-300 transition hover:bg-white/[0.05]"
-            >
-              <Shuffle size={18} />
-            </button>
-          </div> */}
-
           {/* Progress */}
-          <div className="mt-6">
+          <div className="mt-2">
             <div className="mb-3 text-sm text-slate-500">
-              {currentIndex + 1} / {cards.length}
+              {currentIndex + 1} / {activeCards.length}
             </div>
 
             <div className="h-2 overflow-hidden rounded-full bg-white/5">
@@ -124,8 +173,31 @@ export default function ExercisePage() {
           </div>
         </div>
 
+        {/* Shuffle Icon */}
+        <div className="mt-4 flex items-center justify-center gap-8">
+          <button
+            onClick={undoLastMastered}
+            className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] text-slate-300 transition hover:bg-white/[0.05]"
+          >
+            <Undo size={18} />
+          </button>
+
+          <button
+            onClick={resetMastered}
+            className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] text-slate-300 transition hover:bg-white/[0.05]"
+          >
+            <RotateCcw size={18} />
+          </button>
+          <button
+            onClick={shuffleCards}
+            className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] text-slate-300 transition hover:bg-white/[0.05]"
+          >
+            <Shuffle size={18} />
+          </button>
+        </div>
+
         {/* Card */}
-        <div className="flex flex-1 items-center justify-center py-10">
+        {/* <div className="flex flex-1 items-center justify-center pt-4 pb-10">
           <ExerciseCard
             hanzi={currentCard.hanzi}
             pinyin={currentCard.pinyin}
@@ -133,31 +205,67 @@ export default function ExercisePage() {
             revealed={revealed}
             onReveal={() => setRevealed(!revealed)}
           />
+        </div> */}
+        <div className="flex flex-1 items-center justify-center pt-6 pb-10">
+          {completed ? (
+            <div className="w-full max-w-md rounded-[32px] border border-white/10 bg-white/12 p-10 text-center">
+              <div className="text-5xl">🎉</div>
+
+              <div className="mt-6 text-3xl font-semibold text-white">
+                Session Completed
+              </div>
+
+              <p className="mt-3 text-slate-400">
+                Great job reviewing this vocabulary set.
+              </p>
+
+              <button
+                onClick={restartSession}
+                className="mt-8 w-full rounded-2xl bg-indigo-600 px-5 py-4 font-medium text-white transition hover:bg-indigo-500"
+              >
+                Restart Session
+              </button>
+            </div>
+          ) : (
+            <ExerciseCard
+              hanzi={currentCard.hanzi}
+              pinyin={currentCard.pinyin}
+              meaning={currentCard.meaning}
+              revealed={revealed}
+              onReveal={() => setRevealed(true)}
+            />
+          )}
         </div>
 
         {/* Bottom Actions */}
-        <div className="pb-16 grid grid-cols-3 gap-3">
-          <button
-            onClick={previousCard}
-            className="flex items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 text-slate-200 transition hover:bg-white/[0.05]"
-          >
-            <ChevronLeft size={18} />
-          </button>
+        {completed ? (
+          <>
+            <div className="pb-36" />
+          </>
+        ) : (
+          <div className="pb-16 grid grid-cols-3 gap-3">
+            <button
+              onClick={previousCard}
+              className="flex items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 text-slate-200 transition hover:bg-white/[0.05]"
+            >
+              <ChevronLeft size={18} />
+            </button>
 
-          <button
-            onClick={markMastered}
-            className="flex items-center justify-center gap-2 rounded-2xl border border-emerald-500/20 bg-emerald-500/10 px-5 py-4 text-emerald-300 transition hover:bg-emerald-500/20"
-          >
-            <Check size={18} />
-          </button>
+            <button
+              onClick={markMastered}
+              className="flex items-center justify-center gap-2 rounded-2xl border border-emerald-500/20 bg-emerald-500/10 px-5 py-4 text-emerald-300 transition hover:bg-emerald-500/20"
+            >
+              <Check size={18} />
+            </button>
 
-          <button
-            onClick={nextCard}
-            className="flex items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-5 py-4 text-white transition hover:bg-indigo-500"
-          >
-            <ChevronRight size={18} />
-          </button>
-        </div>
+            <button
+              onClick={nextCard}
+              className="flex items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-5 py-4 text-white transition hover:bg-indigo-500"
+            >
+              <ChevronRight size={18} />
+            </button>
+          </div>
+        )}
       </div>
     </main>
   );
