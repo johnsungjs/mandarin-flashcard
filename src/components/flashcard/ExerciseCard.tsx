@@ -21,7 +21,7 @@ export default function ExerciseCard({
       className="group relative flex aspect-square w-full max-w-md items-center justify-center overflow-hidden rounded-4xl border border-white/10 bg-white/12 p-8 transition-all duration-200 hover:bg-white/5 active:scale-[0.99]"
     >
       <div className="text-center">
-        <div className="text-6xl tracking-[0.2em] text-white font-normal leading-none">
+        <div className="text-6xl text-white font-normal -translate-y-0.5 tracking-normal leading-none">
           {hanzi}
         </div>
 

@@ -23,7 +23,7 @@ export default function VocabularyCard({
       <div className="flex h-full flex-col items-center justify-center text-center">
         <div
           className={`${revealed ? "text-2xl" : "text-3xl"} 
-            relative -top-0.5 font-normal leading-none -translate-y-0.5 text-white text-center`}
+            relative -top-1 font-normal leading-none tracking-normal -translate-y-0.5 text-white text-center `}
         >
           {hanzi}
         </div>
