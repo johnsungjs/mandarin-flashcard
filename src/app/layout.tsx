@@ -1,7 +1,12 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-
+import { Noto_Sans_SC } from "next/font/google";
 import "./globals.css";
+
+const notoSansSC = Noto_Sans_SC({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mandarinflashcard.vercel.app"),
@@ -24,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={notoSansSC.className}>
         {children}
         <Analytics />
       </body>

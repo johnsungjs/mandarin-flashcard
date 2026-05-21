@@ -21,7 +21,7 @@ export default function VocabularyCard({
       className="group relative aspect-[1.4/1] w-full overflow-hidden rounded-3xl border border-white/10 bg-white/12 p-2 transition-all duration-200 hover:bg-white/5 active:scale-[0.98]"
     >
       <div className="flex h-full flex-col items-center justify-center text-center">
-        <div className={`${revealed ? 'text-2xl' : 'text-3xl'} leading-none -translate-y-0.5 font-medium text-white`}>
+        <div className={`${revealed ? 'text-2xl' : 'text-3xl'} font-normal leading-none -translate-y-0.5 text-white text-center`}>
           {hanzi}
         </div>
 
