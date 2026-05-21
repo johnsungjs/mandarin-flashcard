@@ -12,7 +12,8 @@ import {
 } from "lucide-react";
 
 import ExerciseCard from "@/components/flashcard/ExerciseCard";
-import { hsk1Data, hskOldLevel } from "@/data/vocabData";
+import hsk1Data from "@/data/hsk1-2.0.json";
+import { hskOldLevel } from "@/data/vocabData";
 import Link from "next/link";
 
 const levels = hskOldLevel;
@@ -218,7 +219,7 @@ export default function ExercisePage() {
             pinyin={currentCard.pinyin}
             meaning={currentCard.meaning}
             revealed={revealed}
-            onReveal={() => setRevealed(true)}
+            onReveal={() => setRevealed(!revealed)}
           />
         )}
       </div>

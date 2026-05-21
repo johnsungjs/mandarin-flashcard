@@ -218,7 +218,7 @@ export default function ExercisePage() {
             pinyin={currentCard.pinyin}
             meaning={currentCard.meaning}
             revealed={revealed}
-            onReveal={() => setRevealed(true)}
+            onReveal={() => setRevealed(!revealed)}
           />
         )}
       </div>

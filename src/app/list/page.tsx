@@ -1,43 +1,8 @@
 import VocabularyCard from "@/components/list/VocabularyCard";
+import hsk1Data from '@/data/hsk1-2.0.json';
 import Link from "next/link";
 
-const cards = [
-  {
-    hanzi: "你好",
-    pinyin: "nǐ hǎo",
-    meaning: "hello",
-  },
-  {
-    hanzi: "公共汽车",
-    pinyin: "gōnggòng qìchē",
-    meaning: "bus",
-  },
-  {
-    hanzi: "谢谢",
-    pinyin: "xiè xie",
-    meaning: "thank you",
-  },
-  {
-    hanzi: "学习",
-    pinyin: "xué xí",
-    meaning: "study / learn",
-  },
-  {
-    hanzi: "中国",
-    pinyin: "zhōng guó",
-    meaning: "china",
-  },
-  {
-    hanzi: "再见",
-    pinyin: "zài jiàn",
-    meaning: "goodbye",
-  },
-  {
-    hanzi: "不客气",
-    pinyin: "bú kè qi",
-    meaning: "you're welcome",
-  },
-];
+const cards = hsk1Data
 
 const levels = ["HSK 1", "HSK 2", "HSK 3"];
 

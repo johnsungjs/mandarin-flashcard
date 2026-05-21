@@ -20,7 +20,7 @@ export default function VocabularyCard({
       onClick={() => setRevealed((prev) => !prev)}
       className="group relative aspect-[1.4/1] w-full overflow-hidden rounded-3xl border border-white/10 bg-white/12 p-2 transition-all duration-200 hover:bg-white/5 active:scale-[0.98]"
     >
-      <div className="flex h-full flex-col items-center justify-center">
+      <div className="flex h-full flex-col items-center justify-center text-center">
         <div className={`${revealed ? 'text-2xl' : 'text-3xl'} leading-none -translate-y-0.5 font-medium text-white`}>
           {hanzi}
         </div>
@@ -29,10 +29,10 @@ export default function VocabularyCard({
           className={`overflow-hidden transition-all duration-300 ${
             revealed
               ? "mt-2 max-h-32 opacity-100"
-              : "max-h-0 opacity-0"
+              : "mt-0 max-h-0 opacity-0"
           }`}
         >
-          <div className="space-y-0 text-center">
+          <div className="space-y-0 text-center leading-tight">
             <div className="text-sm text-slate-200">
               {pinyin}
             </div>
