@@ -12,12 +12,13 @@ import {
 } from "lucide-react";
 
 import ExerciseCard from "@/components/flashcard/ExerciseCard";
-import { hsk1Data, hskOldLevel } from "@/data/vocabData";
+import hsk5Data from "@/data/hsk5-2.0.json";
+import { hskOldLevel } from "@/data/vocabData";
 import Link from "next/link";
 
 const levels = hskOldLevel;
 
-const initialCards = hsk1Data;
+const initialCards = hsk5Data;
 
 export default function ExercisePage() {
   const [currentIndex, setCurrentIndex] = useState(0);
