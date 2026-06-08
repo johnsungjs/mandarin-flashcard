@@ -1,0 +1,902 @@
+[
+  {
+    "id": "hsk4_001",
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "meaning": "to love"
+  },
+  {
+    "id": "hsk4_002",
+    "hanzi": "八",
+    "pinyin": "bā",
+    "meaning": "eight"
+  },
+  {
+    "id": "hsk4_003",
+    "hanzi": "爸爸",
+    "pinyin": "bà ba",
+    "meaning": "(informal) father"
+  },
+  {
+    "id": "hsk4_004",
+    "hanzi": "杯子",
+    "pinyin": "bēi zi",
+    "meaning": "cup"
+  },
+  {
+    "id": "hsk4_005",
+    "hanzi": "北京",
+    "pinyin": "Běi jīng",
+    "meaning": "Beijing"
+  },
+  {
+    "id": "hsk4_006",
+    "hanzi": "本",
+    "pinyin": "běn",
+    "meaning": "roots or stems of plants"
+  },
+  {
+    "id": "hsk4_007",
+    "hanzi": "不客气",
+    "pinyin": "bù kè qi",
+    "meaning": "you're welcome"
+  },
+  {
+    "id": "hsk4_008",
+    "hanzi": "不",
+    "pinyin": "bù",
+    "meaning": "(negative prefix)"
+  },
+  {
+    "id": "hsk4_009",
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "meaning": "dish (type of food)"
+  },
+  {
+    "id": "hsk4_010",
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "meaning": "tea"
+  },
+  {
+    "id": "hsk4_011",
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "meaning": "to eat"
+  },
+  {
+    "id": "hsk4_012",
+    "hanzi": "出租车",
+    "pinyin": "chū zū chē",
+    "meaning": "taxi"
+  },
+  {
+    "id": "hsk4_013",
+    "hanzi": "打电话",
+    "pinyin": "dǎ diàn huà",
+    "meaning": "to make a telephone call"
+  },
+  {
+    "id": "hsk4_014",
+    "hanzi": "大",
+    "pinyin": "dà",
+    "meaning": "big"
+  },
+  {
+    "id": "hsk4_015",
+    "hanzi": "的",
+    "pinyin": "de",
+    "meaning": "of"
+  },
+  {
+    "id": "hsk4_016",
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "meaning": "point"
+  },
+  {
+    "id": "hsk4_017",
+    "hanzi": "电脑",
+    "pinyin": "diàn nǎo",
+    "meaning": "computer"
+  },
+  {
+    "id": "hsk4_018",
+    "hanzi": "电视",
+    "pinyin": "diàn shì",
+    "meaning": "television"
+  },
+  {
+    "id": "hsk4_019",
+    "hanzi": "电影",
+    "pinyin": "diàn yǐng",
+    "meaning": "movie"
+  },
+  {
+    "id": "hsk4_020",
+    "hanzi": "东西",
+    "pinyin": "dōng xi",
+    "meaning": "thing"
+  },
+  {
+    "id": "hsk4_021",
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "meaning": "all"
+  },
+  {
+    "id": "hsk4_022",
+    "hanzi": "读",
+    "pinyin": "dú",
+    "meaning": "to read"
+  },
+  {
+    "id": "hsk4_023",
+    "hanzi": "对不起",
+    "pinyin": "duì bu qǐ",
+    "meaning": "unworthy"
+  },
+  {
+    "id": "hsk4_024",
+    "hanzi": "多",
+    "pinyin": "duō",
+    "meaning": "many"
+  },
+  {
+    "id": "hsk4_025",
+    "hanzi": "多少",
+    "pinyin": "duō shao",
+    "meaning": "how much"
+  },
+  {
+    "id": "hsk4_026",
+    "hanzi": "儿子",
+    "pinyin": "ér zi",
+    "meaning": "son"
+  },
+  {
+    "id": "hsk4_027",
+    "hanzi": "二",
+    "pinyin": "èr",
+    "meaning": "two"
+  },
+  {
+    "id": "hsk4_028",
+    "hanzi": "饭馆",
+    "pinyin": "fàn guǎn",
+    "meaning": "restaurant"
+  },
+  {
+    "id": "hsk4_029",
+    "hanzi": "飞机",
+    "pinyin": "fēi jī",
+    "meaning": "airplane"
+  },
+  {
+    "id": "hsk4_030",
+    "hanzi": "分钟",
+    "pinyin": "fēn zhōng",
+    "meaning": "minute"
+  },
+  {
+    "id": "hsk4_031",
+    "hanzi": "高兴",
+    "pinyin": "gāo xìng",
+    "meaning": "happy"
+  },
+  {
+    "id": "hsk4_032",
+    "hanzi": "个",
+    "pinyin": "gè",
+    "meaning": "variant of 個|个[gè]"
+  },
+  {
+    "id": "hsk4_033",
+    "hanzi": "工作",
+    "pinyin": "gōng zuò",
+    "meaning": "to work"
+  },
+  {
+    "id": "hsk4_034",
+    "hanzi": "狗",
+    "pinyin": "gǒu",
+    "meaning": "dog"
+  },
+  {
+    "id": "hsk4_035",
+    "hanzi": "汉语",
+    "pinyin": "Hàn yǔ",
+    "meaning": "Chinese language"
+  },
+  {
+    "id": "hsk4_036",
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "meaning": "good"
+  },
+  {
+    "id": "hsk4_037",
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "meaning": "to drink"
+  },
+  {
+    "id": "hsk4_038",
+    "hanzi": "和",
+    "pinyin": "hé",
+    "meaning": "and"
+  },
+  {
+    "id": "hsk4_039",
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "meaning": "(adverb of degree)"
+  },
+  {
+    "id": "hsk4_040",
+    "hanzi": "后面",
+    "pinyin": "hòu mian",
+    "meaning": "rear"
+  },
+  {
+    "id": "hsk4_041",
+    "hanzi": "回",
+    "pinyin": "huí",
+    "meaning": "to curve"
+  },
+  {
+    "id": "hsk4_042",
+    "hanzi": "会",
+    "pinyin": "huì",
+    "meaning": "can"
+  },
+  {
+    "id": "hsk4_043",
+    "hanzi": "火车站",
+    "pinyin": "huǒ chē zhàn",
+    "meaning": "train station"
+  },
+  {
+    "id": "hsk4_044",
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "meaning": "how much"
+  },
+  {
+    "id": "hsk4_045",
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "meaning": "home"
+  },
+  {
+    "id": "hsk4_046",
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "meaning": "to shout"
+  },
+  {
+    "id": "hsk4_047",
+    "hanzi": "今天",
+    "pinyin": "jīn tiān",
+    "meaning": "today"
+  },
+  {
+    "id": "hsk4_048",
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "meaning": "nine"
+  },
+  {
+    "id": "hsk4_049",
+    "hanzi": "开",
+    "pinyin": "kāi",
+    "meaning": "to open"
+  },
+  {
+    "id": "hsk4_050",
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "meaning": "to see"
+  },
+  {
+    "id": "hsk4_051",
+    "hanzi": "看见",
+    "pinyin": "kàn jiàn",
+    "meaning": "to see"
+  },
+  {
+    "id": "hsk4_052",
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "meaning": "lump (of earth)"
+  },
+  {
+    "id": "hsk4_053",
+    "hanzi": "来",
+    "pinyin": "lái",
+    "meaning": "to come"
+  },
+  {
+    "id": "hsk4_054",
+    "hanzi": "老师",
+    "pinyin": "lǎo shī",
+    "meaning": "teacher"
+  },
+  {
+    "id": "hsk4_055",
+    "hanzi": "了",
+    "pinyin": "le",
+    "meaning": "(modal particle intensifying preceding clause)"
+  },
+  {
+    "id": "hsk4_056",
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "meaning": "cold"
+  },
+  {
+    "id": "hsk4_057",
+    "hanzi": "里",
+    "pinyin": "lǐ",
+    "meaning": "li (Chinese mile)"
+  },
+  {
+    "id": "hsk4_058",
+    "hanzi": "零",
+    "pinyin": "líng",
+    "meaning": "zero"
+  },
+  {
+    "id": "hsk4_059",
+    "hanzi": "六",
+    "pinyin": "liù",
+    "meaning": "six"
+  },
+  {
+    "id": "hsk4_060",
+    "hanzi": "妈妈",
+    "pinyin": "mā ma",
+    "meaning": "mama"
+  },
+  {
+    "id": "hsk4_061",
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "meaning": "(question tag)"
+  },
+  {
+    "id": "hsk4_062",
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "meaning": "to buy"
+  },
+  {
+    "id": "hsk4_063",
+    "hanzi": "猫",
+    "pinyin": "māo",
+    "meaning": "cat"
+  },
+  {
+    "id": "hsk4_064",
+    "hanzi": "没",
+    "pinyin": "méi",
+    "meaning": "(negative prefix for verbs)"
+  },
+  {
+    "id": "hsk4_065",
+    "hanzi": "没关系",
+    "pinyin": "méi guān xi",
+    "meaning": "it doesn't matter"
+  },
+  {
+    "id": "hsk4_066",
+    "hanzi": "米饭",
+    "pinyin": "mǐ fàn",
+    "meaning": "(cooked) rice"
+  },
+  {
+    "id": "hsk4_067",
+    "hanzi": "明天",
+    "pinyin": "míng tiān",
+    "meaning": "tomorrow"
+  },
+  {
+    "id": "hsk4_068",
+    "hanzi": "名字",
+    "pinyin": "míng zi",
+    "meaning": "name (of a person or thing)"
+  },
+  {
+    "id": "hsk4_069",
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "meaning": "how"
+  },
+  {
+    "id": "hsk4_070",
+    "hanzi": "那",
+    "pinyin": "nà",
+    "meaning": "that"
+  },
+  {
+    "id": "hsk4_071",
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "meaning": "particle indicating that a previously asked question is to be applied to the preceding word (\"What about ...?\""
+  },
+  {
+    "id": "hsk4_072",
+    "hanzi": "能",
+    "pinyin": "néng",
+    "meaning": "to be able to"
+  },
+  {
+    "id": "hsk4_073",
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "meaning": "you (informal"
+  },
+  {
+    "id": "hsk4_074",
+    "hanzi": "年",
+    "pinyin": "nián",
+    "meaning": "year"
+  },
+  {
+    "id": "hsk4_075",
+    "hanzi": "女儿",
+    "pinyin": "nǚ ér",
+    "meaning": "daughter"
+  },
+  {
+    "id": "hsk4_076",
+    "hanzi": "朋友",
+    "pinyin": "péng you",
+    "meaning": "friend"
+  },
+  {
+    "id": "hsk4_077",
+    "hanzi": "漂亮",
+    "pinyin": "piào liang",
+    "meaning": "pretty"
+  },
+  {
+    "id": "hsk4_078",
+    "hanzi": "苹果",
+    "pinyin": "píng guǒ",
+    "meaning": "apple"
+  },
+  {
+    "id": "hsk4_079",
+    "hanzi": "七",
+    "pinyin": "qī",
+    "meaning": "seven"
+  },
+  {
+    "id": "hsk4_080",
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "meaning": "coin"
+  },
+  {
+    "id": "hsk4_081",
+    "hanzi": "前面",
+    "pinyin": "qián miàn",
+    "meaning": "ahead"
+  },
+  {
+    "id": "hsk4_082",
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "meaning": "to ask"
+  },
+  {
+    "id": "hsk4_083",
+    "hanzi": "去",
+    "pinyin": "qù",
+    "meaning": "to go"
+  },
+  {
+    "id": "hsk4_084",
+    "hanzi": "热",
+    "pinyin": "rè",
+    "meaning": "to warm up"
+  },
+  {
+    "id": "hsk4_085",
+    "hanzi": "人",
+    "pinyin": "rén",
+    "meaning": "man"
+  },
+  {
+    "id": "hsk4_086",
+    "hanzi": "认识",
+    "pinyin": "rèn shi",
+    "meaning": "to know"
+  },
+  {
+    "id": "hsk4_087",
+    "hanzi": "日",
+    "pinyin": "rì",
+    "meaning": "sun"
+  },
+  {
+    "id": "hsk4_088",
+    "hanzi": "三",
+    "pinyin": "sān",
+    "meaning": "three"
+  },
+  {
+    "id": "hsk4_089",
+    "hanzi": "商店",
+    "pinyin": "shāng diàn",
+    "meaning": "store"
+  },
+  {
+    "id": "hsk4_090",
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "meaning": "on top"
+  },
+  {
+    "id": "hsk4_091",
+    "hanzi": "上午",
+    "pinyin": "shàng wǔ",
+    "meaning": "morning"
+  },
+  {
+    "id": "hsk4_092",
+    "hanzi": "少",
+    "pinyin": "shǎo",
+    "meaning": "few"
+  },
+  {
+    "id": "hsk4_093",
+    "hanzi": "谁",
+    "pinyin": "shéi",
+    "meaning": "who"
+  },
+  {
+    "id": "hsk4_094",
+    "hanzi": "什么",
+    "pinyin": "shén me",
+    "meaning": "what?"
+  },
+  {
+    "id": "hsk4_095",
+    "hanzi": "十",
+    "pinyin": "shí",
+    "meaning": "ten"
+  },
+  {
+    "id": "hsk4_096",
+    "hanzi": "时候",
+    "pinyin": "shí hou",
+    "meaning": "time"
+  },
+  {
+    "id": "hsk4_097",
+    "hanzi": "是",
+    "pinyin": "shì",
+    "meaning": "is"
+  },
+  {
+    "id": "hsk4_098",
+    "hanzi": "书",
+    "pinyin": "shū",
+    "meaning": "book"
+  },
+  {
+    "id": "hsk4_099",
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "meaning": "water"
+  },
+  {
+    "id": "hsk4_100",
+    "hanzi": "水果",
+    "pinyin": "shuǐ guǒ",
+    "meaning": "fruit"
+  },
+  {
+    "id": "hsk4_101",
+    "hanzi": "睡觉",
+    "pinyin": "shuì jiào",
+    "meaning": "to go to bed"
+  },
+  {
+    "id": "hsk4_102",
+    "hanzi": "说话",
+    "pinyin": "shuō huà",
+    "meaning": "to speak"
+  },
+  {
+    "id": "hsk4_103",
+    "hanzi": "四",
+    "pinyin": "sì",
+    "meaning": "four"
+  },
+  {
+    "id": "hsk4_104",
+    "hanzi": "岁",
+    "pinyin": "suì",
+    "meaning": "classifier for years (of age)"
+  },
+  {
+    "id": "hsk4_105",
+    "hanzi": "他",
+    "pinyin": "tā",
+    "meaning": "he or him"
+  },
+  {
+    "id": "hsk4_106",
+    "hanzi": "她",
+    "pinyin": "tā",
+    "meaning": "she"
+  },
+  {
+    "id": "hsk4_107",
+    "hanzi": "太",
+    "pinyin": "tài",
+    "meaning": "highest"
+  },
+  {
+    "id": "hsk4_108",
+    "hanzi": "天气",
+    "pinyin": "tiān qì",
+    "meaning": "weather"
+  },
+  {
+    "id": "hsk4_109",
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "meaning": "to listen"
+  },
+  {
+    "id": "hsk4_110",
+    "hanzi": "同学",
+    "pinyin": "tóng xué",
+    "meaning": "to study at the same school"
+  },
+  {
+    "id": "hsk4_111",
+    "hanzi": "喂",
+    "pinyin": "wèi",
+    "meaning": "to feed"
+  },
+  {
+    "id": "hsk4_112",
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "meaning": "I"
+  },
+  {
+    "id": "hsk4_113",
+    "hanzi": "我们",
+    "pinyin": "wǒ men",
+    "meaning": "we"
+  },
+  {
+    "id": "hsk4_114",
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "meaning": "five"
+  },
+  {
+    "id": "hsk4_115",
+    "hanzi": "喜欢",
+    "pinyin": "xǐ huan",
+    "meaning": "to like"
+  },
+  {
+    "id": "hsk4_116",
+    "hanzi": "下",
+    "pinyin": "xià",
+    "meaning": "down"
+  },
+  {
+    "id": "hsk4_117",
+    "hanzi": "下午",
+    "pinyin": "xià wǔ",
+    "meaning": "afternoon"
+  },
+  {
+    "id": "hsk4_118",
+    "hanzi": "下雨",
+    "pinyin": "xià yǔ",
+    "meaning": "to rain"
+  },
+  {
+    "id": "hsk4_119",
+    "hanzi": "先生",
+    "pinyin": "xiān sheng",
+    "meaning": "teacher"
+  },
+  {
+    "id": "hsk4_120",
+    "hanzi": "现在",
+    "pinyin": "xiàn zài",
+    "meaning": "now"
+  },
+  {
+    "id": "hsk4_121",
+    "hanzi": "想",
+    "pinyin": "xiǎng",
+    "meaning": "to think"
+  },
+  {
+    "id": "hsk4_122",
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "meaning": "small"
+  },
+  {
+    "id": "hsk4_123",
+    "hanzi": "小姐",
+    "pinyin": "xiǎo jie",
+    "meaning": "young lady"
+  },
+  {
+    "id": "hsk4_124",
+    "hanzi": "些",
+    "pinyin": "xiē",
+    "meaning": "some"
+  },
+  {
+    "id": "hsk4_125",
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "meaning": "to write"
+  },
+  {
+    "id": "hsk4_126",
+    "hanzi": "谢谢",
+    "pinyin": "xiè xie",
+    "meaning": "to thank"
+  },
+  {
+    "id": "hsk4_127",
+    "hanzi": "星期",
+    "pinyin": "xīng qī",
+    "meaning": "week"
+  },
+  {
+    "id": "hsk4_128",
+    "hanzi": "学生",
+    "pinyin": "xué sheng",
+    "meaning": "student"
+  },
+  {
+    "id": "hsk4_129",
+    "hanzi": "学习",
+    "pinyin": "xué xí",
+    "meaning": "to learn"
+  },
+  {
+    "id": "hsk4_130",
+    "hanzi": "学校",
+    "pinyin": "xué xiào",
+    "meaning": "school"
+  },
+  {
+    "id": "hsk4_131",
+    "hanzi": "一",
+    "pinyin": "yī",
+    "meaning": "one"
+  },
+  {
+    "id": "hsk4_132",
+    "hanzi": "衣服",
+    "pinyin": "yī fu",
+    "meaning": "clothes"
+  },
+  {
+    "id": "hsk4_133",
+    "hanzi": "医生",
+    "pinyin": "yī shēng",
+    "meaning": "doctor"
+  },
+  {
+    "id": "hsk4_134",
+    "hanzi": "医院",
+    "pinyin": "yī yuàn",
+    "meaning": "hospital"
+  },
+  {
+    "id": "hsk4_135",
+    "hanzi": "椅子",
+    "pinyin": "yǐ zi",
+    "meaning": "chair"
+  },
+  {
+    "id": "hsk4_136",
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "meaning": "to have"
+  },
+  {
+    "id": "hsk4_137",
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "meaning": "moon"
+  },
+  {
+    "id": "hsk4_138",
+    "hanzi": "在",
+    "pinyin": "zài",
+    "meaning": "(located) at"
+  },
+  {
+    "id": "hsk4_139",
+    "hanzi": "再见",
+    "pinyin": "zài jiàn",
+    "meaning": "goodbye"
+  },
+  {
+    "id": "hsk4_140",
+    "hanzi": "怎么",
+    "pinyin": "zěn me",
+    "meaning": "variant of 怎麼|怎么[zěn me]"
+  },
+  {
+    "id": "hsk4_141",
+    "hanzi": "怎么样",
+    "pinyin": "zěn me yàng",
+    "meaning": "how?"
+  },
+  {
+    "id": "hsk4_142",
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "meaning": "this"
+  },
+  {
+    "id": "hsk4_143",
+    "hanzi": "中国",
+    "pinyin": "Zhōng guó",
+    "meaning": "China"
+  },
+  {
+    "id": "hsk4_144",
+    "hanzi": "中午",
+    "pinyin": "zhōng wǔ",
+    "meaning": "noon"
+  },
+  {
+    "id": "hsk4_145",
+    "hanzi": "住",
+    "pinyin": "zhù",
+    "meaning": "to live"
+  },
+  {
+    "id": "hsk4_146",
+    "hanzi": "桌子",
+    "pinyin": "zhuō zi",
+    "meaning": "table"
+  },
+  {
+    "id": "hsk4_147",
+    "hanzi": "字",
+    "pinyin": "zì",
+    "meaning": "letter"
+  },
+  {
+    "id": "hsk4_148",
+    "hanzi": "昨天",
+    "pinyin": "zuó tiān",
+    "meaning": "yesterday"
+  },
+  {
+    "id": "hsk4_149",
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "meaning": "to sit"
+  },
+  {
+    "id": "hsk4_150",
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "meaning": "to do"
+  }
+]
