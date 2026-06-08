@@ -3,12 +3,12 @@
 import { useMemo, useState } from "react";
 
 import {
-    Check,
-    ChevronLeft,
-    ChevronRight,
-    RotateCcw,
-    Shuffle,
-    Undo,
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  RotateCcw,
+  Shuffle,
+  Undo,
 } from "lucide-react";
 
 import ExerciseCard from "@/components/flashcard/ExerciseCard";
@@ -67,21 +67,37 @@ export default function ExercisePage() {
     setRevealed(false);
   };
 
-  const nextCard = () => {
-    // setRevealed(true);
+  const navigateWithHideAnimation = (callback: () => void) => {
+    if (revealed) {
+      setRevealed(false);
 
-    if (currentIndex === activeCards.length - 1) {
-      setCompleted(true);
+      setTimeout(() => {
+        callback();
+      }, 300);
+
       return;
     }
 
-    setCurrentIndex((prev) => prev + 1);
+    callback();
+  };
+
+  const nextCard = () => {
+    navigateWithHideAnimation(() => {
+      if (currentIndex === activeCards.length - 1) {
+        setCompleted(true);
+        return;
+      }
+
+      setCurrentIndex((prev) => prev + 1);
+    });
   };
 
   const previousCard = () => {
-    // setRevealed(true);
-
-    setCurrentIndex((prev) => (prev === 0 ? activeCards.length - 1 : prev - 1));
+    navigateWithHideAnimation(() => {
+      setCurrentIndex((prev) =>
+        prev === 0 ? activeCards.length - 1 : prev - 1
+      );
+    });
   };
 
   const shuffleCards = () => {
@@ -93,16 +109,17 @@ export default function ExercisePage() {
   };
 
   const markMastered = () => {
-    const updated = [...masteredIds, currentCard.id];
+    navigateWithHideAnimation(() => {
+      const updated = [...masteredIds, currentCard.id];
 
-    saveMastered(updated);
+      saveMastered(updated);
+      if (currentIndex >= activeCards.length - 1) {
+        setCompleted(true);
+        return;
+      }
 
-    if (currentIndex >= activeCards.length - 1) {
-      setCompleted(true);
-      return;
-    }
-
-    setCurrentIndex((prev) => prev + 1);
+      setCurrentIndex((prev) => prev + 1);
+    });
   };
 
   const getStoredMastered = (): string[] => {
