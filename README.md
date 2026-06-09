@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mandarin Flashcard
 
-## Getting Started
+A minimal, fast, and distraction-free web app for learning HSK vocabulary.
 
-First, run the development server:
+Unlike traditional spaced-repetition tools, Mandarin Flashcard focuses on simplicity. No accounts, no setup, and no complicated algorithms. Just open the website and start learning.
+
+## ✨ Features
+
+### 📚 Vocabulary List
+
+* Browse vocabulary by HSK level
+* Show or hide Pinyin
+* Show or hide English meanings
+* Tap to reveal information instantly
+* Mobile-friendly and responsive
+
+### 🎴 Flashcard Exercise
+
+* Practice vocabulary through flashcards
+* Mark words as:
+
+  * 🔁 Repeat
+  * ⭐ Mastered
+  * ⏭ Skip
+* Progress is saved locally in your browser
+
+### ⚡ Lightweight Experience
+
+* No login required
+* No backend required
+* Instant loading
+* Works on desktop and mobile
+
+## 🎯 Philosophy
+
+Learning Mandarin should be simple.
+
+This project was inspired by the idea that language learners often need fewer features, not more. Instead of building another feature-heavy learning platform, Mandarin Flashcard focuses on delivering a smooth daily learning experience.
+
+> The simplest way to consistently learn HSK vocabulary.
+
+## 🛠 Tech Stack
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Local Storage
+
+## 🚀 Running Locally
 
 ```bash
+git clone <repository-url>
+cd mandarin-flashcard
+
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📖 Data Source
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+HSK vocabulary data is based on publicly available HSK word lists.
 
-## Learn More
+Special thanks to the maintainers and contributors of the following repository for providing HSK vocabulary resources:
 
-To learn more about Next.js, take a look at the following resources:
+* [GitHub Repository] https://github.com/plaktos/hsk_csv
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Please refer to the original repository for licensing and attribution details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
 
-## Deploy on Vercel
+Suggestions, bug reports, and pull requests are welcome.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you find this project useful, consider starring the repository.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License
+
+This project is licensed under the MIT License.
