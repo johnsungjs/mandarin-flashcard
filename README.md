@@ -50,7 +50,7 @@ This project was inspired by the idea that language learners often need fewer fe
 ## 🚀 Running Locally
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/johnsungjs/mandarin-flashcard
 cd mandarin-flashcard
 
 npm install
